@@ -1,0 +1,55 @@
+// Prisma Schema file for Menroll
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+// Client is a device like VR headset
+model Client {
+  id         Int       @id @default(autoincrement())
+  name       String?
+  spot       Spot      @relation(fields: [spotId], references: [id]) // connected spot
+  spotId     Int
+  resource   Resource? @relation(fields: [resourceId], references: [id])
+  resourceId Int?
+}
+
+// Location for several spots (each set of resources)
+model Site {
+  id    Int     @id @default(autoincrement())
+  name  String?
+  spots Spot[]
+}
+
+// A set of resources with robotic Arm and camera
+model Spot {
+  id        Int        @id @default(autoincrement())
+  name      String?
+  resources Resource[]
+  clients   Client[]
+  site      Site?      @relation(fields: [siteId], references: [id])
+  siteId    Int?
+}
+
+// Resource type
+//enum ResType {
+//  ROBOT_ARM == 1
+//  SINGLE_CAMERA ==2
+//  DUAL_CAMERA ==3
+//}
+
+// Resource denotes all client, robotic-arm, cameras.
+model Resource {
+  id      Int      @id @default(autoincrement())
+  name    String?
+  type    Int
+  desc    String? // may be json...
+  clients Client[] // connected Clients (for robot arm, only 1)
+  spot    Spot?    @relation(fields: [spotId], references: [id])
+  spotId  Int?
+}
