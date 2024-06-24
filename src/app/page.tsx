@@ -26,10 +26,18 @@ const Page = () => {
       <TopNavi />
 
       <div>
-        <h4>Menroll for the Metawork Enrollment</h4>
         <div>
-          <br />
-          <div id="remote-videos"></div>
+          <Container>
+          <h3>Menroll for the Metawork Enrollment</h3>
+          <Row>
+            <Col>
+             <h4>Menroll is a remote robot management system.</h4>
+
+             Please check "Robots site"
+            </Col>
+          </Row>
+
+          </Container>
         </div>
       </div>
     </div>
