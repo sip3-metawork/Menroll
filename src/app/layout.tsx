@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "MetaWork App",
+  title: "Menroll",
   description: "Created by Nagoya Univ. UCLab",
 };
 

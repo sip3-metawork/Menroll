@@ -16,7 +16,7 @@ const Page = () => {
     // ページが開かれた時に実行される関数
     if (!hasRun) {
       hasRun = true;
-      console.log("doit!");
+//      console.log("doit!");
       doit();
     }
   }, []); // 空の配列を渡すことで、初回レンダリング時のみ実行されます
@@ -33,7 +33,7 @@ const Page = () => {
             <Col>
              <h4>Menroll is a remote robot management system.</h4>
 
-             Please check "Robots site"
+             Please check "RobotsSite menu"
             </Col>
           </Row>
 
