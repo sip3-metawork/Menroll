@@ -14,12 +14,12 @@ const initialSiteData = [
                             {
                                 name: 'DOBOT Nova2',
                                 type: 1,//ROBOT_ARM,
-                                desc: "{mqttServer: 'sora2.uclab.jp',mqttTopic: 'arm/nu_nova2'}"
+                                desc: '{"mqttServer": "sora2.uclab.jp","mqttTopic": "arm/nu_nova2"}'
                             },
                             {
                                 name: 'DualCAM',
                                 type: 3,//DUAL_CAMERA,
-                                desc: "{webRTCServer: 'sora2.uclab.jp', webRTCChannel: 'sora'}"
+                                desc: '{"webRTCServer": "sora2.uclab.jp", "webRTCChannel": "sora"}'
                             }
                         ]
                     }
@@ -38,12 +38,12 @@ const initialSiteData = [
                             {
                                 name: 'Zu5s',
                                 type: 1, //ROBOT_ARM,
-                                desc: "{mqttServer: 'sora2.uclab.jp',mqttTopic: 'arm/nu_jaka'}"
+                                desc: '{"mqttServer": "sora2.uclab.jp","mqttTopic": "arm/nu_jaka"}'
                             },
                             {
                                 name: 'WebCAM',
                                 type: 2, //SINGLE_CAMERA,
-                                desc: "{ webRTCServer: 'ws://sora2.uclab.jp:5000/signaling', webRTCChannel: 'nu_jaka'}"
+                                desc: '{"webRTCServer": "ws://sora2.uclab.jp:5000/signaling", "webRTCChannel": "nu_jaka"}'
                             }
 
                         ]
@@ -57,7 +57,7 @@ const initialSiteData = [
                             {
                                 name: 'UR5e',
                                 type: 1,//ROBOT_ARM,
-                                desc: "{mqttServer: 'sora2.uclab.jp',mqttTopic: 'arm/nu_ur5e'}"
+                                desc: '{"mqttServer": "sora2.uclab.jp","mqttTopic": "arm/nu_ur5e"}'
                             }
                         ]
                     }
