@@ -4,11 +4,11 @@ Metawork object enrollment system
 
 We develop Menroll with next.js and  ORM Prisma.
 
-# initial seed database
+# initial setup of database
 npx prisma migrate dev --name init
 
 # only seeding database. (not required for intiall time)
-npx prisma seed db
+npx prisma db seed
 
 # for Development
 pnpm install
