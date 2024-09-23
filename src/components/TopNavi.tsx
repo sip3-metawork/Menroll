@@ -2,6 +2,7 @@
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Nav, Navbar } from "react-bootstrap";
+import Link from 'next/link';
 
 export default (props) => {
   const ver = "0.1.0"
@@ -9,11 +10,14 @@ export default (props) => {
   return (
     <Navbar  bg="success" expand="md">
       <Container>
-        <Navbar.Brand href="/"> Menroll {ver} </Navbar.Brand>
+        <Navbar.Brand as="div">  <Link href="/" passHref>
+        Menroll {ver}   </Link>
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="/list"> RobotSites </Nav.Link>
+            <Link href="/list" passHref> <Nav.Link as="div" > RobotSites </Nav.Link></Link>
+            <Link href="/debug" passHref> <Nav.Link as="div" >  WebXR-NoVideo-debug  </Nav.Link></Link>
           </Nav>
           <Nav>
             <Nav.Link href="https://ucl.nuee.nagoya-u.ac.jp">

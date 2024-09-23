@@ -3,6 +3,8 @@ import React, { useEffect, useState } from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 
 import TopNavi from "../components/TopNavi";
+import "./page.css";
+
 
 var hasRun: boolean = false;
 

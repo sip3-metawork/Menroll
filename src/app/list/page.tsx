@@ -4,6 +4,7 @@ import prisma from "../../lib/prisma"
 
 import TopNavi from "../../components/TopNavi";
 import Spot from "../../components/Spot"
+import "../page.css";
 
 var hasRun: boolean = false;
 

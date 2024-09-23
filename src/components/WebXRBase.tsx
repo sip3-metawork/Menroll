@@ -11,7 +11,6 @@ interface WebXRProps {
 };
 
 
-
 const WebXRBase : React.FC<WebXRProps> = ({mqttServer,mqttTopic, autoConnect})=>{
     const [vrState, setVrState] = useState("NoVR");
     const [hasVR, setHasVR] =useState(false);
